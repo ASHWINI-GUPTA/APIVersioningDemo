@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace APIVersioningDemo.Controllers
 {
     [Route("api/info")]
-    [ApiVersion("1.0")]
+    [ApiVersion("1.0", Deprecated = true)]
     [ApiVersion("1.1")]
     [ApiController]
     public class InfoController : ControllerBase

@@ -40,7 +40,7 @@ namespace APIVersioningDemo
         private static void MyConventions(ApiVersioningOptions config)
         {
             config.Conventions.Controller<ConventionController>()
-                .HasApiVersion(new ApiVersion(1, 0))
+                .HasDeprecatedApiVersion(new ApiVersion(1, 0))
                 .HasApiVersion(new ApiVersion(1, 1))
                 .Action(typeof(ConventionController).GetMethod("Get"))
                 .MapToApiVersion(new ApiVersion(1, 0))
